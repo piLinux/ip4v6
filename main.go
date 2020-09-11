@@ -11,13 +11,17 @@ import (
 
 // main function
 func main() {
-	// Load environment variables
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatalln(err)
-	}
-
 	port := os.Getenv("PORT")
+	if port == "" {
+		// Load environment variables
+		err := godotenv.Load()
+		if err != nil {
+			log.Fatalln(err)
+		} else {
+			port = os.Getenv("PORT")
+		}
+	}
+	// verify $PORT again
 	if port == "" {
 		log.Fatalln("$PORT must be set")
 	}
