@@ -28,10 +28,17 @@ func main() {
 	}
 }
 
+// LogErr to log error
+func LogErr(n int, err error) {
+	if err != nil {
+		log.Printf("Write failed: %v", err)
+	}
+}
+
 // HTTPHandler function
 func HTTPHandler(w http.ResponseWriter, r *http.Request) {
 	resp := GetIP(r) + "\n"
-	w.Write([]byte(resp))
+	LogErr(w.Write([]byte(resp)))
 }
 
 // GetIP gets IP address by reading off the forwarded-for
