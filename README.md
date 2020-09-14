@@ -1,6 +1,6 @@
 ## IP4v6 | Find your IPv4/IPv6 address
 
-[![Build Status](https://travis-ci.org/piLinux/ip4v6.svg?branch=master)][01]
+[![Build Status](https://travis-ci.com/piLinux/ip4v6.svg?branch=master)][01]
 
 
 #### For users
@@ -48,4 +48,4 @@ returns only the IPv4/IPv6 address. To find your user-agent and geolocation,
 please check the previous section `For users`.
 
 
-[01]: https://travis-ci.org/piLinux/ip4v6
+[01]: https://travis-ci.com/piLinux/ip4v6
