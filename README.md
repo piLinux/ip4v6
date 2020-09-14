@@ -8,8 +8,8 @@
 - Find your IPv4/v6
   - From any web browser, visit: https://ip.pilinux.me
   - From Linux/Mac Terminal or Windows command prompt: `curl ip.pilinux.me`
-    - To find your IPv4 address: `curl ip.pilinux.me -v4`
-    - To find your IPv6 address: `curl ip.pilinux.me -v6`
+    - To find your IPv4 address: `curl ip.pilinux.me -4`
+    - To find your IPv6 address: `curl ip.pilinux.me -6`
 
 - Find your geolocation
   - From any web browser, visit: https://gl.pilinux.me
